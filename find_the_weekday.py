@@ -183,14 +183,15 @@ elif Year==1:
         day = "Saturday"
     elif q == 0:
         day = "Sunday"
-if c in [1,11,21,31]:
+if c in [1,21,31]:
    print(f"It is \033[38;2;255;0;0m{day}\033[0m on {c}st {m}, {a}")
-elif c in [2,12,22]:
+elif c in [2,22]:
    print(f"It is \033[38;2;255;0;0m{day}\033[0m on {c}nd {m}, {a}")
-elif c in [3,13,23]:
+elif c in [3,23]:
    print(f"It is \033[38;2;255;0;0m{day}\033[0m on {c}rd {m}, {a}")
 else:
    print(f"It is \033[38;2;255;0;0m{day}\033[0m on {c}th {m}, {a}")
+
 
 
 
